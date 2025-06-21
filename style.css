@@ -1,0 +1,60 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the header content */
+    align-items: center;
+    transition: 0.6s;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 90px;
+    z-index: 100000;
+}
+
+header.sticky {
+    padding: 0px 100px;
+    background: #fff;
+}
+
+header .logo {
+    position: absolute; /* Position logo absolutely to take it out of flex flow */
+    left: 10px; /* Position logo on the left */
+    bottom: 25px;
+    font-weight: 700;
+    color: rgb(170, 8, 8);
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-family: "Inter", sans-serif;
+    width: 200px; /* Fixed the capitalization */
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Added to remove default margin */
+    padding: 0; /* Added to remove default padding */
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    font-size: 120%;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white !important;
+    letter-spacing: 2px;
+    font-weight: 500; /* Fixed: removed 'px' as font-weight doesn't use pixels */
+    transition: 0.6s;
+    font-family: "Work Sans", sans-serif;
+}
