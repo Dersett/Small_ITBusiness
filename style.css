@@ -71,8 +71,12 @@ header ul li a {
 
 header ul li a:hover,
 header ul li a.active {
-    background: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
-    color: #fff;
+    background: none;
+    color: transparent;
+    background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Main content styles */
