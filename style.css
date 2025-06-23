@@ -1,60 +1,185 @@
+/* Reset and base styles */
+html, body, .site-body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", "Inter", Arial, sans-serif;
+    background: #f7f7f7;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.site-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+/* ...existing code... */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    justify-content: center; /* Center the header content */
-    align-items: center;
-    transition: 0.6s;
-    padding-left: 10px;
-    padding-right: 10px;
     height: 90px;
-    z-index: 100000;
-}
-
-header.sticky {
-    padding: 0px 100px;
-    background: #fff;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 0 40px; /* Add horizontal padding */
 }
 
 header .logo {
-    position: absolute; /* Position logo absolutely to take it out of flex flow */
-    left: 10px; /* Position logo on the left */
-    bottom: 25px;
-    font-weight: 700;
-    color: rgb(170, 8, 8);
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-    font-family: "Inter", sans-serif;
-    width: 200px; /* Fixed the capitalization */
+    height: 60px;
+    margin-left: 0;
+    margin-right: 350px; /* Space between logo and nav */
+}
+
+header nav {
+    justify-content: flex-start; /* Align nav items to the left */
+    display: flex;
+    justify-content: center; /* Center nav within available space */
+    align-items: center;
 }
 
 header ul {
-    position: relative;
+    justify-content: flex-start ; 
     display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     justify-content: center;
     align-items: center;
-    margin: 0; /* Added to remove default margin */
-    padding: 0; /* Added to remove default padding */
 }
 
-header ul li {
-    position: relative;
-    list-style: none;
-}
 
 header ul li a {
-    font-size: 120%;
-    position: relative;
-    margin: 0 15px;
+    color: #fff;
     text-decoration: none;
-    color: white !important;
-    letter-spacing: 2px;
-    font-weight: 500; /* Fixed: removed 'px' as font-weight doesn't use pixels */
-    transition: 0.6s;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
+    color: #fff;
+}
+
+/* Main content styles */
+.main-content {
+    flex: 1;
+    padding-top: 110px; /* header height + spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content h1 {
+    color: #222;
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Footer styles */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2em 1em 1em 1em;
+    width: 100%;
     font-family: "Work Sans", sans-serif;
+    margin-top: auto;
+}
+
+.footer-contact {
+    margin-bottom: 1em;
+    font-size: 1.05em;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: underline;
+    margin: 0 5px;
+    transition: color 0.3s, background 0.3s;
+}
+
+.footer-links {
+    margin-bottom: 0.5em;
+    font-size: 0.98em;
+    color: #bbb;
+}
+
+.footer-links .quick-link {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 8px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.footer-links .quick-link:hover,
+.footer-contact .social-link:hover,
+.footer-contact .contact-link:hover {
+    background: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
+    color: #fff !important;
+}
+
+.footer-lang {
+    margin-bottom: 0.8em;
+}
+
+.footer-lang label {
+    color: #bbb;
+    font-size: 0.97em;
+}
+
+.lang-select {
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-family: "Work Sans", sans-serif;
+    margin-left: 8px;
+    transition: border 0.3s;
+}
+
+.lang-select:focus {
+    border: 1.5px solid #7b2ff2;
+    outline: none;
+}
+
+.footer-copy {
+    color: #888;
+    font-size: 0.95em;
+    margin-top: 0.5em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    header .logo {
+        height: 40px;
+        margin-left: 10px;
+    }
+    header ul {
+        gap: 10px;
+    }
+    .main-content h1 {
+        font-size: 1.2em;
+    }
+    footer {
+        padding: 1.2em 0.5em 0.5em 0.5em;
+    }
 }
