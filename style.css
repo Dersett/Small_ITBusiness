@@ -164,9 +164,7 @@ header ul li a.active {
 
 .contact-info:hover {
     color: #cccccc;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
 }
 
 .contact-phone {
@@ -178,9 +176,7 @@ header ul li a.active {
 
 .contact-phone:hover {
    color: #cccccc;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
 }
 
 .contact-email {
@@ -192,9 +188,7 @@ header ul li a.active {
 
 .contact-email:hover {
     color: #cccccc;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
 }
 
 .contact-socials {
