@@ -105,15 +105,27 @@ header ul li a.active {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Equal width columns */
-    gap: 3rem;
-    align-items: flex-start; /* Align all items to top of their containers */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four equal columns */
+    gap: 2rem;
+    align-items: flex-start;
 }
 
 .footer-left {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+footer-pages {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.footer-pages h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.2em;
+    color: #cccccc;
 }
 
 .logo {
@@ -140,20 +152,26 @@ header ul li a.active {
     -webkit-text-fill-color: transparent;
 }
 
+/* Contact section - fourth column */
 .footer-right {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    align-items: flex-start; /* Changed from center to left */
+    gap: 1.5rem;
+    align-items: flex-start;
 }
 
 .contact-section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    text-align: left; /* Changed from right to left */
+    text-align: left;
 }
 
+.contact-section h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.2em;
+    color: #cccccc;
+}
 .contact-info {
     color: #cccccc;
     font-size: 0.9rem;
@@ -312,8 +330,8 @@ header ul li a.active {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            width: 100%; /* Full width of column */
-            max-width: 250px; /* Increased max-width, removed centering */
+            width: 100%;
+            max-width: 250px;
         }
 
         .newsletter-input {
@@ -354,7 +372,7 @@ header ul li a.active {
 
 @media (max-width: 768px) {
     .footer-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
 
@@ -394,6 +412,11 @@ header ul li a.active {
             }
 }
  @media (max-width: 480px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
             .newsletter-form {
                 flex-direction: column;
             }
