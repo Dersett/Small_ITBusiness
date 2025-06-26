@@ -155,24 +155,6 @@ header ul li a.active {
     text-align: right;
 }
 
-.contact-section h3 {
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease;
-}
-
-.contact-section h3:hover {
-    color: transparent;
-    background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .contact-info {
     color: #cccccc;
     font-size: 0.9rem;
@@ -181,8 +163,7 @@ header ul li a.active {
 }
 
 .contact-info:hover {
-    color: transparent;
-    background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
+    color: #cccccc;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -196,8 +177,7 @@ header ul li a.active {
 }
 
 .contact-phone:hover {
-    color: transparent;
-    background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
+   color: #cccccc;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -211,8 +191,7 @@ header ul li a.active {
 }
 
 .contact-email:hover {
-    color: transparent;
-    background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
+    color: #cccccc;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -238,26 +217,7 @@ header ul li a.active {
 }
 
 .contact-socials a:hover {
-    color: transparent;
-    background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.resources-section h3 {
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease;
-}
-
-.resources-section h3:hover {
-    color: transparent;
-    background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
+    color: #ffffff;;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -327,12 +287,11 @@ header ul li a.active {
 }
 
 .social-links a:hover {
-    color: transparent;
+    color: #cccccc;
     background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Responsive adjustments */
