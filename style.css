@@ -290,6 +290,52 @@ header ul li a.active {
     -webkit-text-fill-color: transparent;
 }
 
+.newsletter-section {
+            padding: 10px;
+        }
+
+        .newsletter-section h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .newsletter-section p {
+            margin: 0 0 15px 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .newsletter-input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        .newsletter-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter-btn:hover {
+            background-color: #0056b3;
+        }
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
     header .logo {
@@ -331,4 +377,27 @@ header ul li a.active {
         gap: 1rem;
         text-align: center;
     }
+    .newsletter-form {
+                flex-direction: row;
+                max-width: 100%;
+            }
+
+            .newsletter-input {
+                flex: 1;
+            }
+
+            .newsletter-btn {
+                flex-shrink: 0;
+                min-width: 100px;
+            }
 }
+ @media (max-width: 480px) {
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .newsletter-input,
+            .newsletter-btn {
+                width: 100%;
+            }
+        }
