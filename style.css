@@ -297,20 +297,20 @@ header ul li a.active {
         .newsletter-section h3 {
             margin: 0 0 10px 0;
             font-size: 1.2em;
-            color: #333;
+            color: #cccccc;
         }
 
         .newsletter-section p {
             margin: 0 0 15px 0;
             font-size: 0.9em;
-            color: #666;
+            color: #cccccc;
         }
 
         .newsletter-form {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            max-width: 300px;
+            max-width: 200px;
             margin: 0 auto;
         }
 
