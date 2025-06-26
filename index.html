@@ -27,7 +27,21 @@
                     <a href="index.html"><img class="logo" src="images/logo.png" alt="Threat Sense Logo"></a>
                 </div>
             </div>
-
+            <div class="footer-center">
+            <div class="newsletter-section">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest threat intelligence updates</p>
+                <form class="newsletter-form" onsubmit="handleSubmit(event)">
+                    <input 
+                        type="email" 
+                        class="newsletter-input" 
+                        placeholder="Enter your email address" 
+                        required
+                    >
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
             <div class="footer-right">
                 <div class="resources-section">
                     <div class="resources-links">
@@ -78,8 +92,14 @@
             
         </div>
     </footer>
-    
-
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            alert(`Thank you for subscribing with email: ${email}`);
+            event.target.reset();
+        }
+    </script>
     <script src="https://chatrace.com/webchat/plugin.js?v=6"></script><script>ktt10.setup({id:"yMhJqh0UOPKBtHBO",accountId:"1842423",color:"#006dff"})</script>
 </body>
 </html>
