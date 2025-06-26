@@ -124,37 +124,11 @@ header ul li a.active {
             height: 60px;
         }
 
-        .logo-text {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #00ff88;
-        }
-
-        .logo-dev {
-            font-size: 0.8rem;
-            color: #00ff88;
-            background-color: rgba(0, 255, 136, 0.2);
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-            margin-left: 0.2rem;
-        }
-
         .footer-description {
             color: #cccccc;
             line-height: 1.6;
             max-width: 500px;
             margin-bottom: 0.5rem;
-        }
-
-        .build-with-us {
-            color: #00ff88;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .build-with-us:hover {
-            color: #00cc6a;
         }
 
         .footer-right {
@@ -193,14 +167,14 @@ header ul li a.active {
         }
 
         .contact-email {
-            color: #00ff88;
+            color: #cccccc;
             text-decoration: none;
             font-size: 0.9rem;
             transition: color 0.3s ease;
         }
 
         .contact-email:hover {
-            color: #00cc6a;
+            background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
         }
 
         .contact-socials {
@@ -221,16 +195,6 @@ header ul li a.active {
             height: 32px;
             border-radius: 6px;
         }
-
-        .contact-socials a:hover {
-            opacity: 0.8;
-        }
-
-        .contact-socials .facebook { background-color: #1877f2; }
-        .contact-socials .instagram { background-color: #e4405f; }
-        .contact-socials .linkedin { background-color: #0077b5; }
-        .contact-socials .youtube { background-color: #ff0000; }
-        .contact-socials .twitter { background-color: #000000; }
 
         .resources-section h3 {
             color: #ffffff;
@@ -256,7 +220,7 @@ header ul li a.active {
         }
 
         .resources-links a:hover {
-            color: #00ff88;
+            background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
         }
 
         .footer-bottom {
@@ -292,8 +256,7 @@ header ul li a.active {
         }
 
         .social-links a:hover {
-            color: #00ff88;
-            background-color: rgba(0, 255, 136, 0.1);
+            background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
         }
 /* Responsive adjustments */
 @media (max-width: 600px) {
