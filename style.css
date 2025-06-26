@@ -221,7 +221,6 @@ header ul li a.active {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    align-items: center;
 }
 
 .resources-links a {
@@ -249,7 +248,7 @@ header ul li a.active {
 }
 
 .copyright {
-    color: #888888;
+    color: transparent;
     font-size: 0.9rem;
     transition: color 0.3s ease;
     background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
