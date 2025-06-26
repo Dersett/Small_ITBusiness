@@ -105,9 +105,9 @@ header ul li a.active {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 1fr 1fr 1fr; /* Equal width columns */
     gap: 3rem;
-    align-items: start;
+    align-items: flex-start; /* Align all items to top of their containers */
 }
 
 .footer-left {
@@ -144,14 +144,14 @@ header ul li a.active {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    align-items: center;
+    align-items: flex-start; /* Changed from center to left */
 }
 
 .contact-section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    text-align: right;
+    text-align: left; /* Changed from right to left */
 }
 
 .contact-info {
@@ -193,7 +193,7 @@ header ul li a.active {
 .contact-socials {
     display: flex;
     gap: 0.5rem;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-top: 0.5rem;
 }
 
@@ -238,12 +238,13 @@ header ul li a.active {
 }
 
 .footer-bottom {
-    margin-top: 2rem;
+   margin-top: 2rem;
     padding-top: 2rem;
     border-top: 1px solid #333333;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-column: 1 / -1; /* Span across all columns */
 }
 
 .copyright {
@@ -291,7 +292,8 @@ header ul li a.active {
 }
 
 .newsletter-section {
-            padding: 10px;
+            padding: 0; /* Removed padding */
+            align-items: flex-start; /* Added left alignment */
         }
 
         .newsletter-section h3 {
@@ -310,8 +312,8 @@ header ul li a.active {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            max-width: 200px;
-            margin: 0 auto;
+            width: 100%; /* Full width of column */
+            max-width: 250px; /* Increased max-width, removed centering */
         }
 
         .newsletter-input {
