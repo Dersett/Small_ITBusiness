@@ -251,6 +251,9 @@ header ul li a.active {
     font-size: 0.9rem;
     transition: color 0.3s ease;
     background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .copyright:hover {
