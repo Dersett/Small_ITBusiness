@@ -364,14 +364,14 @@ footer-pages {
   align-items: center;
   z-index: 9999;
   transition: opacity 0.5s ease;
-  height: 60px;  
+  height: 100%;
+  width:100%;
 }
 
 #preloader.fade-out {
   opacity: 0;
   pointer-events: none;
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
