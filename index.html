@@ -98,6 +98,13 @@
             
         </div>
     </footer>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader-content">
+        <img src="images/logo.png" alt="Loading..." />
+      </div>
+    </div>
+
 <!--     chatbot -->
     <script data-id="cmceoy0ou0001l70bt551vlbh" src="https://tinychat.ai/tinychat.js" async defer></script>
     <script>
@@ -108,5 +115,13 @@
             event.target.reset();
         }
     </script>
+    <script>
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    preloader.classList.add('fade-out');
+    setTimeout(() => preloader.style.display = 'none', 500);
+  });
+</script>
+
 </body>
 </html>
