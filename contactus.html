@@ -98,6 +98,9 @@
             
         </div>
     </footer>
+    <div id="preloader">
+      <img class="preloaderimg" src="images/logo.png" alt="Loading..." />
+    </div>
     <!--     chatbot -->
     <script data-id="cmceoy0ou0001l70bt551vlbh" src="https://tinychat.ai/tinychat.js" async defer></script>
     <script>
@@ -108,5 +111,18 @@
             event.target.reset();
         }
     </script>
+     <script>
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+
+    // Keep preloader for at least 2 seconds (2000 ms)
+    setTimeout(() => {
+      preloader.classList.add('fade-out');
+
+      // Wait for fade-out transition to complete
+      setTimeout(() => preloader.style.display = 'none', 800); // match CSS transition time
+    }, 2000); // Delay before starting fade out
+  });
+</script>
 </body>
 </html>
