@@ -118,10 +118,17 @@
     <script>
   window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
-    preloader.classList.add('fade-out');
-    setTimeout(() => preloader.style.display = 'none', 500);
+
+    // Keep preloader for at least 2 seconds (2000 ms)
+    setTimeout(() => {
+      preloader.classList.add('fade-out');
+
+      // Wait for fade-out transition to complete
+      setTimeout(() => preloader.style.display = 'none', 800); // match CSS transition time
+    }, 2000); // Delay before starting fade out
   });
 </script>
+
 
 </body>
 </html>
