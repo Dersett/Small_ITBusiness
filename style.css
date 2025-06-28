@@ -481,7 +481,6 @@ header ul li a.active {
 /* Main content styles */
 .main-content {
     flex: 1;
-    padding-top: 110px; /* header height + spacing */
     display: flex;
     flex-direction: column;
     align-items: center;
