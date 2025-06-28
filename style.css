@@ -263,7 +263,8 @@ footer-pages {
     justify-content: space-between;
     align-items: center;
     grid-column: 1 / -1; /* Span across all columns */
-    flex-wrap: wrap; /* Makes it responsive on small screens */
+    min-height: 50px;
+    position: relative;
 }
 .footer-bottom .footer-legal {
     color: transparent;
@@ -273,7 +274,10 @@ footer-pages {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    position: absolute;
     left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
 }
 
 .copyright {
