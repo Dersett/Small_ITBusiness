@@ -1171,6 +1171,7 @@ header ul li a.active {
         .service-features {
             list-style: none;
             padding: 0;
+            border-left: none;
         }
 
         .service-features li {
