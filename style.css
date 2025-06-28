@@ -1101,10 +1101,8 @@ header ul li a.active {
             margin-right: 10px;
             font-size: 0.9rem;
         }
-.hero {
-            height: 100vh;
-            background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.8)), 
-                        url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPHN0eWxlPgoucGFydGljbGUgewogICAgZmlsbDogIzYwYTVmYTsKICAgIG9wYWNpdHk6IDAuNjsKICAgIGFuaW1hdGlvbjogZmxvYXQgNnMgZWFzZS1pbi1vdXQgaW5maW5pdGU7Cn0KCkBrZXlmcmFtZXMgZmxvYXQgewogICAgMCUsIDEwMCUgeyB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMHB4KTsgfQogICAgNTAlIHsgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC0yMHB4KTsgfQp9Cjwvc3R5bGU+CjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjE5MjAiIGhlaWdodD0iMTA4MCIgZmlsbD0iIzFkNGVkOCIvPgo8L3N2Zz4K');
+        .hero {
+            background: url('images/hero.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -1113,30 +1111,6 @@ header ul li a.active {
             justify-content: center;
             position: relative;
             overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('hero.jpg');
-            background-size: cover;
-            background-position: center;
-            z-index: -2;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(30, 58, 138, 0.85), rgba(59, 130, 246, 0.75));
-            z-index: -1;
         }
 
         .hero-content {
