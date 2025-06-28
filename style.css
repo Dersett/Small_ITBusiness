@@ -782,6 +782,9 @@ header ul li a.active {
   height: 100%;
   width:100%;
 }
+.preloaderimg{
+    height:100px;
+}
 
 #preloader.fade-out {
   opacity: 0;
