@@ -532,23 +532,69 @@ footer-pages {
         }
 
         .usage-list {
-            margin: 15px 0;
-            padding-left: 0;
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
-        .usage-list li {
-            margin: 8px 0;
-            padding-left: 20px;
+        .usage-item {
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            margin: 16px 0;
+            border-radius: 15px;
+            padding: 25px;
             position: relative;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
         }
 
-        .usage-list li:before {
-            content: "→";
+        .usage-item::before {
+            content: '';
             position: absolute;
+            top: 0;
             left: 0;
-            color: #667eea;
-            font-weight: bold;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
         }
+
+        .usage-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+        }
+
+        .usage-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            margin-right: 20px;
+            float: left;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        .usage-content {
+            margin-left: 60px;
+            color: #2d3748;
+            font-size: 16px;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .usage-item .usage-icon {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
@@ -603,6 +649,16 @@ footer-pages {
             .newsletter-btn {
                 flex-shrink: 0;
                 min-width: 100px;
+            }
+    .usage-content {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+            
+            .usage-icon {
+                float: none;
+                margin-right: 0;
+                margin-bottom: 10px;
             }
 }
  @media (max-width: 480px) {
