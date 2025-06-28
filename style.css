@@ -115,7 +115,7 @@ header ul li a.active {
     flex-direction: column;
     gap: 1rem;
 }
-footer-pages {
+.footer-pages {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -639,40 +639,6 @@ footer-pages {
             margin-bottom: 10px;
             font-size: 1.2rem;
             color: white;
-        }
-
-        h2 {
-            color: #2c3e50;
-            font-size: 1.8rem;
-            margin: 30px 0 15px 0;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #3498db;
-        }
-
-        h3 {
-            color: #34495e;
-            font-size: 1.3rem;
-            margin: 25px 0 10px 0;
-        }
-
-        h4 {
-            color: #2c3e50;
-            font-size: 1.1rem;
-            margin: 20px 0 10px 0;
-            font-weight: 600;
-        }
-
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        ul, ol {
-            margin: 15px 0 15px 30px;
-        }
-
-        li {
-            margin-bottom: 8px;
         }
 
         .service-features {
