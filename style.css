@@ -485,6 +485,7 @@ header ul li a.active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top:110px;
 }
 
 .main-content h1 {
