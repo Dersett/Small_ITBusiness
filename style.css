@@ -695,7 +695,7 @@ footer-pages {
             margin: 20px 0;
         }
 
-        .contact-info {
+        .cinfo {
             background: linear-gradient(135deg, #7B68EE, #6A5ACD);
             color: white;
             padding: 25px;
@@ -704,18 +704,18 @@ footer-pages {
             text-align: center;
         }
 
-        .contact-info h3 {
+        .cinfo h3 {
             color: #E8E6FF;
             margin-top: 0;
             margin-bottom: 15px;
         }
 
-        .contact-info a {
+        .cinfo a {
             color: #E8E6FF;
             text-decoration: none;
         }
 
-        .contact-info a:hover {
+        .cinfo a:hover {
             text-decoration: underline;
         }
 
