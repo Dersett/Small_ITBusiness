@@ -398,6 +398,7 @@ header ul li a.active {
     margin-top: 4rem;
     max-width: 1000px;
     animation: fadeInUp 1s cubic-bezier(.39,.575,.565,1) 0.8s both;
+    width:90%;
 }
 
 .feature-card {
