@@ -1,3 +1,403 @@
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    margin-left: 20px;
+    z-index: 1100;
+}
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    margin: 4px 0;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.menu-toggle.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+    nav {
+        position: relative;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #222;
+        flex-direction: column;
+        width: 180px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+        padding: 18px 0 18px 0;
+        gap: 0;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: all 0.3s cubic-bezier(.39,.575,.565,1);
+        z-index: 1099;
+    }
+    nav ul.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        margin: 0;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 12px 24px;
+        font-size: 1.1em;
+        border-radius: 0;
+        color: #fff;
+        background: none;
+        border-bottom: 1px solid #333;
+        transition: background 0.2s, color 0.2s;
+    }
+    nav ul li:last-child a {
+        border-bottom: none;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+        background: #333;
+        color: #7b2ff2;
+        -webkit-background-clip: unset;
+        background-clip: unset;
+        -webkit-text-fill-color: unset;
+    }
+    header .logo {
+        margin-right: 20px;
+    }
+}
+/* Under Construction Section Responsive Styles */
+.under-construction-section {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(123,47,242,0.07), 0 1.5px 8px rgba(0,0,0,0.04);
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 600px;
+    margin: 0 auto 2.5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp 0.8s cubic-bezier(.39,.575,.565,1) both;
+}
+.under-construction-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    color: #7b2ff2;
+    background: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.under-construction-section p {
+    color: #444;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    margin-bottom: 0.7rem;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .under-construction-section {
+        max-width: 98vw;
+        padding: 1.5rem 0.7rem 1.5rem 0.7rem;
+    }
+    .under-construction-section h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .under-construction-section {
+        padding: 1rem 0.3rem 1rem 0.3rem;
+    }
+    .under-construction-section h1 {
+        font-size: 1.1rem;
+    }
+    .under-construction-section p {
+        font-size: 0.98rem;
+    }
+}
+/* Responsive improvements for team pyramid and about section */
+@media (max-width: 900px) {
+    .about-section {
+        max-width: 98vw;
+        padding: 1.5rem 0.7rem 1.5rem 0.7rem;
+    }
+    .about-section h1 {
+        font-size: 2rem;
+    }
+    .team-member {
+        width: 110px;
+        padding: 0.7rem 0.3rem 0.7rem 0.3rem;
+    }
+    .team-photo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-section {
+        padding: 1rem 0.3rem 1rem 0.3rem;
+    }
+    .about-section h1 {
+        font-size: 1.3rem;
+    }
+    .about-section h2 {
+        font-size: 1.1rem;
+    }
+    .about-section p, .about-section ul {
+        font-size: 0.98rem;
+    }
+    .team-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.1rem;
+    }
+    .team-row-top, .team-row-bottom {
+        gap: 1.1rem;
+    }
+    .team-member {
+        width: 90vw;
+        max-width: 260px;
+    }
+    .team-photo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Team Pyramid Layout */
+.team-pyramid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+.team-row {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+.team-row-top {
+    gap: 3.5rem;
+}
+.team-row-bottom {
+    gap: 2.2rem;
+}
+
+@media (max-width: 900px) {
+    .team-row {
+        gap: 1.2rem;
+    }
+    .team-row-top {
+        gap: 2rem;
+    }
+    .team-row-bottom {
+        gap: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.1rem;
+    }
+    .team-row-top, .team-row-bottom {
+        gap: 1.1rem;
+    }
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    background: #faf7ff;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(123,47,242,0.07);
+    padding: 1.1rem 0.7rem 0.7rem 0.7rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.team-member:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(123,47,242,0.13);
+}
+
+.team-photo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #7b2ff2;
+    margin-bottom: 0.7rem;
+    background: #eaeaea;
+}
+
+.team-name {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #7b2ff2;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+@media (max-width: 900px) {
+    .team-section {
+        gap: 1.2rem 1.2rem;
+    }
+    .team-member {
+        width: 110px;
+        padding: 0.7rem 0.3rem 0.7rem 0.3rem;
+    }
+    .team-photo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.1rem;
+    }
+    .team-member {
+        width: 90vw;
+        max-width: 260px;
+    }
+}
+/* About Us Section Styles */
+.about-section {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(123,47,242,0.07), 0 1.5px 8px rgba(0,0,0,0.04);
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: fadeInUp 0.8s cubic-bezier(.39,.575,.565,1) both;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+    color: #7b2ff2;
+    background: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about-section h2 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+    color: #222;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.about-section p {
+    color: #444;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    margin-bottom: 1.1rem;
+    margin-top: 0.2rem;
+}
+
+.about-section ul {
+    margin: 0 0 1.2rem 1.8rem;
+    padding: 0;
+    color: #333;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    list-style: disc outside;
+}
+
+.about-section ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.2rem;
+}
+
+.about-section ul li strong {
+    color: #7b2ff2;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .about-section {
+        max-width: 98vw;
+        padding: 1.5rem 0.7rem 1.5rem 0.7rem;
+    }
+    .about-section h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-section {
+        padding: 1rem 0.3rem 1rem 0.3rem;
+    }
+    .about-section h1 {
+        font-size: 1.3rem;
+    }
+    .about-section h2 {
+        font-size: 1.1rem;
+    }
+    .about-section p, .about-section ul {
+        font-size: 0.98rem;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* Reset and base styles */
 html, body, .site-body {
     height: 100%;

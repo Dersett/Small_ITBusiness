@@ -15,7 +15,7 @@
     <header>
         <a href="index.html"><img class="logo" src="images/logo.png" alt="Threat Sense Logo"></a>
         <nav>
-            <ul>
+            <ul id="nav-list">
                 <li><a href="index.html" class="home">Home</a></li>
                 <li><a href="aboutus.html" class="aboutus">About Us</a></li>
                 <li><a href="subscriptions.html" class="products">Subscriptions</a></li>
@@ -24,7 +24,61 @@
         </nav>
     </header>
     <main class="main-content">
-        <h1><center>Welcome to Our Page<br><br>The Page is Still Under Construction<br><br>So Please Come Back Later</center></h1>
+        <section class="about-section">
+            <h1>About Us</h1>
+            <p>
+                <strong>Threat Sense</strong> is dedicated to providing cutting-edge IoT Intrusion Detection Systems (IDS) to secure your connected environments. Our mission is to empower businesses and individuals with advanced, reliable, and user-friendly cybersecurity solutions tailored for the rapidly evolving world of IoT.
+            </p>
+            <h2>Our Vision</h2>
+            <p>
+                To secure the connected world by making IoT devices intelligently defended.
+            </p>
+            <h2>What We Offer</h2>
+            <ul>
+                <li><strong>Anomaly-Based & Specification-based Detection :</strong> Identify unusual patterns spefici for IOT devices and threats in real time.</li>
+                <li><strong>Distributed Framework:</strong> Low resource confumption but still very accurate 99.99%</li>
+                <li><strong>DDoS Protection:</strong> Safeguard your devices and networks from distributed attacks.</li>
+                <li><strong>Advanced Biometric Authentication:</strong> Secure access to your IoT devices with robust authentication methods.</li>
+                <li><strong>Intuitive Alert Management:</strong> Receive and manage security alerts with ease through our user-friendly dashboard.</li>
+            </ul>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Expertise in enterprise-grade IoT security</li>
+                <li>Innovative and adaptive technology</li>
+                <li>Dedicated customer support</li>
+                <li>Commitment to privacy and data protection</li>
+            </ul>
+            <p>
+                At Threat Sense, we believe in building a safer digital future. Join us on our journey to make every connected device secure.
+            </p>
+            <h2>Meet Our Team</h2>
+            <div class="team-pyramid">
+                <div class="team-row team-row-top">
+                    <div class="team-member">
+                        <img src="images/dulan.jpg" alt="Dulan Nilitha" class="team-photo">
+                        <span class="team-name">Dulan Nilitha</span>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/dulsara.jpg" alt="Dulsara Seekuge" class="team-photo">
+                        <span class="team-name">Dulsara Seekuge</span>
+                    </div>
+                </div>
+                <div class="team-row team-row-bottom">
+                    <div class="team-member">
+                        <img src="images/rehan-dulsara.jpg" alt="Rehan Dulsara" class="team-photo">
+                        <span class="team-name">Rehan Dulsara</span>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/sahan-geethika.jpg" alt="Sahan Geethika" class="team-photo">
+                        <span class="team-name">Sahan Geethika</span>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/achira-thilakarathne.jpg" alt="Achira Thilakarathne" class="team-photo">
+                        <span class="team-name">Achira Thilakarathne</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer-container">
@@ -110,6 +164,18 @@
             alert(`Thank you for subscribing with email: ${email}`);
             event.target.reset();
         }
+
+        // Highlight active nav link
+        (function() {
+            var navLinks = document.querySelectorAll('nav ul li a');
+            var current = window.location.pathname.split('/').pop();
+            if (!current) current = 'index.html';
+            navLinks.forEach(function(link) {
+                if (link.getAttribute('href') === current) {
+                    link.classList.add('active');
+                }
+            });
+        })();
     </script>
      <script>
   window.addEventListener('load', () => {

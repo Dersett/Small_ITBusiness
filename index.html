@@ -15,7 +15,7 @@
     <header>
         <a href="index.html"><img class="logo" src="images/logo.png" alt="Threat Sense Logo"></a>
         <nav>
-            <ul>
+            <ul id="nav-list">
                 <li><a href="index.html" class="home">Home</a></li>
                 <li><a href="aboutus.html" class="aboutus">About Us</a></li>
                 <li><a href="subscriptions.html" class="products">Subscriptions</a></li>
@@ -24,7 +24,11 @@
         </nav>
     </header>
     <main class="main-content">
-        <h1><center>Welcome to Our Page<br><br>The Page is Still Under Construction<br><br>So Please Come Back Later</center></h1>
+        <section class="under-construction-section">
+            <h1>Welcome to Our Page</h1>
+            <p>The Page is Still Under Construction</p>
+            <p>Please Come Back Later</p>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer-container">
@@ -112,6 +116,17 @@
             alert(`Thank you for subscribing with email: ${email}`);
             event.target.reset();
         }
+        // Highlight active nav link
+        (function() {
+            var navLinks = document.querySelectorAll('nav ul li a');
+            var current = window.location.pathname.split('/').pop();
+            if (!current) current = 'index.html';
+            navLinks.forEach(function(link) {
+                if (link.getAttribute('href') === current) {
+                    link.classList.add('active');
+                }
+            });
+        })();
     </script>
     <script>
   window.addEventListener('load', () => {
