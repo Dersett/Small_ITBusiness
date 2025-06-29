@@ -1597,12 +1597,12 @@ header ul li a.active {
   }
 
   header .logo {
-    margin-right: 100px;
+    margin-right: 75px;
     height: 50px;
   }
 
   header ul {
-    gap: 15px;
+    gap: 10px;
   }
 
   header ul li a {
