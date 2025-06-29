@@ -394,7 +394,7 @@ header ul li a.active {
 
 .hero-features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin-top: 4rem;
     max-width: 1200px;
