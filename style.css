@@ -1602,11 +1602,11 @@ header ul li a.active {
   }
 
   header ul {
-    gap: 20px;
+    gap: 15px;
   }
 
   header ul li a {
-    font-size: 1em;
+    font-size: 0.75em;
   }
     .main-content {
     padding-top: 70px;
