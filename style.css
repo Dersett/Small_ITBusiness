@@ -1274,9 +1274,9 @@ header ul li a.active {
     display: none; /* Hide nav menu on small screens (use toggle menu instead) */
   }
     .main-content {
-    padding-top: 70px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
     .under-construction-section {
         padding: 1rem 0.3rem 1rem 0.3rem;
@@ -1321,7 +1321,7 @@ header ul li a.active {
         font-size: 0.98rem;
     }
     .hero-section {
-        padding: 2.5rem 1rem 3.5rem 1rem;
+        padding: 2rem 0.5rem 3rem 0.5rem;
         min-height: 50vh;
     }
     
