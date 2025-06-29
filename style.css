@@ -1481,3 +1481,88 @@ header ul li a.active {
         justify-content: center;
     } 
 }
+
+/* Themed Section Styles */
+.themed-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(123,47,242,0.07), 0 1.5px 8px rgba(0,0,0,0.04);
+    padding: 2.5rem 2rem 2rem 2rem;
+    margin: 0 auto 2.5rem auto;
+    max-width: 1000px;
+    color: #fff;
+}
+/* Contact Info Box Styles */
+.contact-info-box {
+    background: #fff;
+    color: #222;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(123,47,242,0.07);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.8s cubic-bezier(.39,.575,.565,1) both;
+}
+.contact-info-box h3 {
+    color: #7b2ff2;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+.contact-info-box p {
+    color: #444;
+    margin-bottom: 0.7rem;
+}
+/* Styled Map */
+.styled-map iframe {
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(123,47,242,0.07);
+}
+/* Contact Form Box Styles */
+.contact-form-box {
+    background: #faf7ff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(123,47,242,0.07);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    animation: fadeInUp 0.8s cubic-bezier(.39,.575,.565,1) both;
+}
+.styled-contact-form label {
+    color: #7b2ff2;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+.styled-contact-form .newsletter-input {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #222;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 1em;
+    padding: 10px 12px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.2s;
+}
+.styled-contact-form .newsletter-input:focus {
+    border: 1.5px solid #7b2ff2;
+    outline: none;
+}
+.styled-contact-form textarea.newsletter-input {
+    min-height: 120px;
+    resize: vertical;
+}
+.styled-contact-form .newsletter-btn {
+    margin-top: 0.5rem;
+    width: 100%;
+    max-width: 200px;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+@media (max-width: 900px) {
+    .themed-section {
+        padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+    }
+    .contact-info-box, .contact-form-box {
+        padding: 1.2rem 0.7rem 1rem 0.7rem;
+    }
+}
