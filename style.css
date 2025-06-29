@@ -394,7 +394,7 @@ header ul li a.active {
 
 .hero-features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     gap: 2rem;
     margin-top: 4rem;
     max-width: 1200px;
@@ -407,8 +407,8 @@ header ul li a.active {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 18px;
-    padding: 1.5rem 1.5rem;
+    border-radius: 15px;
+    padding: 1.5rem;
     transition: all 0.3s cubic-bezier(.39,.575,.565,1);
     position: relative;
     overflow: hidden;
