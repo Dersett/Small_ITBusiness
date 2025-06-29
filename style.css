@@ -1110,344 +1110,6 @@ header ul li a.active {
     color: #10b981;
     font-weight: bold;
 }
-/* Responsive adjustments */
-@media (max-width: 480px) {
-    .contact-page {
-                padding: 1.5rem 0.5rem;
-            }
-            
-            .contact-header h1 {
-                font-size: 1.75rem;
-            }
-            
-            .contact-info-box,
-            .contact-form-box,
-            .map-container {
-                padding: 1.2rem 0.8rem;
-            }
-            
-            .styled-map {
-                height: 300px;
-            }  
-  .services h2 {
-    font-size: 1.75rem;
-  }
-
-  .services .section-subtitle {
-    font-size: 0.95rem;
-    margin-bottom: 2rem;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr; /* Stack cards vertically */
-  }
-
-  .service-card {
-    padding: 1rem;
-  }
-
-  .service-card h3 {
-    font-size: 1.1rem;
-  }
-
-  .service-card p,
-  .service-features li {
-    font-size: 0.9rem;
-  }
-    header {
-    flex-direction: row;
-    height: 60px;
-  }
-
-  header .logo {
-    height: 40px;
-  }
-
-  header ul li a {
-    font-size: 0.9em;
-    padding: 6px 12px;
-  }
-    .main-content {
-    padding-top: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-    .cta-button {
-        width: 100%;
-        max-width: 150px;
-        justify-content: center;
-    } 
-}
-
-@media (max-width: 768px) {
-    .contact-page {
-                padding: 2rem 1rem;
-            }
-            
-            .contact-header h1 {
-                font-size: 2rem;
-            }
-            
-            .contact-header p {
-                font-size: 1rem;
-            }
-            
-            .contact-info-box,
-            .contact-form-box,
-            .map-container {
-                padding: 1.5rem 1rem;
-            }
-            
-            .contact-info-item {
-                flex-direction: column;
-                text-align: center;
-                padding: 1.5rem;
-            }
-            
-            .contact-icon {
-                margin-right: 0;
-                margin-bottom: 1rem;
-            }
-    .services {
-    width: 95%;
-    padding: 50px 0;
-  }
-
-  .services h2 {
-    font-size: 2rem;
-  }
-
-  .services .section-subtitle {
-    font-size: 1rem;
-  }
-
-  .service-card {
-    padding: 1.5rem;
-  }
-
-  .service-card h3 {
-    font-size: 1.3rem;
-  }
-
-  .service-card p {
-    font-size: 0.95rem;
-  }
-
-  .service-features li {
-    font-size: 0.95rem;
-  }
-    header {
-    height: 70px;
-    padding: 0 15px;
-    justify-content: space-between;
-  }
-
-  header .logo {
-    margin-right: 0;
-    height: 45px;
-  }
-
-  header nav {
-    display: none; /* Hide nav menu on small screens (use toggle menu instead) */
-  }
-    .main-content {
-    padding-top: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-    .under-construction-section {
-        padding: 1rem 0.3rem 1rem 0.3rem;
-    }
-    .under-construction-section h1 {
-        font-size: 1.1rem;
-    }
-    .under-construction-section p {
-        font-size: 0.98rem;
-    }
-    .team-photo {
-        width: 50px;
-        height: 50px;
-    }
-    .team-row {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.1rem;
-    }
-    .team-row-top, .team-row-bottom {
-        gap: 1.1rem;
-    }
-    .team-section {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.1rem;
-    }
-    .team-member {
-        width: 90vw;
-        max-width: 260px;
-    }
-    .about-section {
-        padding: 1rem 0.3rem 1rem 0.3rem;
-    }
-    .about-section h1 {
-        font-size: 1.3rem;
-    }
-    .about-section h2 {
-        font-size: 1.1rem;
-    }
-    .about-section p, .about-section ul {
-        font-size: 0.98rem;
-    }
-    .hero-section {
-        padding: 3rem 1.5rem 2.5rem 1.5rem;
-        min-height: 50vh;
-    }
-    
-    .hero-title {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .hero-description {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-    }
-    .cta-button {
-        width: 100%;
-        max-width: 200px;
-        justify-content: center;
-    } 
-    
-    .hero-features {
-        margin-top: 2rem;
-        gap: 1rem;
-    }
-    
-    .feature-card {
-        padding: 1rem 0.8rem;
-    }
-    
-    .feature-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 1.2rem;
-    }
-    
-    .feature-title {
-        font-size: 1.1rem;
-    }
-    
-    .feature-description {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 1024px){
-.contact-container {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-    .services {
-    width: 90%;
-    padding: 60px 0;
-  }
-
-  .servicescontainer {
-    width: 90%;
-    padding: 0 15px;
-  }
-
-  .services h2 {
-    font-size: 2.5rem;
-  }
-
-  .services .section-subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 3rem;
-  }
-
-  .services-grid {
-    gap: 1.5rem;
-  }
-    header {
-    padding: 0 20px;
-  }
-
-  header .logo {
-    margin-right: 200px;
-    height: 50px;
-  }
-
-  header ul {
-    gap: 20px;
-  }
-
-  header ul li a {
-    font-size: 1em;
-  }
-    .main-content {
-    padding-top: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-   .under-construction-section {
-        max-width: 98vw;
-        padding: 1.5rem 0.7rem 1.5rem 0.7rem;
-    }
-    .under-construction-section h1 {
-        font-size: 1.5rem;
-    }
-    .about-section {
-        max-width: 98vw;
-        padding: 1.5rem 0.7rem 1.5rem 0.7rem;
-    }
-    .about-section h1 {
-        font-size: 2rem;
-    }
-    .team-member {
-        width: 110px;
-        padding: 0.7rem 0.3rem 0.7rem 0.3rem;
-    }
-    .team-photo {
-        width: 60px;
-        height: 60px;
-    }
-    .team-row {
-        gap: 1.2rem;
-    }
-    .team-row-top {
-        gap: 2rem;
-    }
-    .team-row-bottom {
-        gap: 1.1rem;
-    }
-    .team-section {
-        gap: 1.2rem 1.2rem;
-    }
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.3rem;
-    }
-    
-    .hero-features {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .hero-cta {
-        flex-direction: column;
-        gap: 1rem;
-    }
-}
-
 .contact-page {
             width: 100%;
             min-height: calc(100vh - 90px);
@@ -1663,77 +1325,74 @@ header ul li a.active {
                 transform: translateY(0);
             }
         }
-
-/* ========================
-   Responsive Footer Styles
-   ======================== */
-
-/* ↓ Max width: 1024px (small laptops/tablets) */
-@media (max-width: 1024px) {
-  .footer-container {
-    grid-template-columns: 1fr 1fr; /* 2-column layout */
-    gap: 1.5rem;
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .contact-page {
+                padding: 1.5rem 0.5rem;
+            }
+            
+            .contact-header h1 {
+                font-size: 1.75rem;
+            }
+            
+            .contact-info-box,
+            .contact-form-box,
+            .map-container {
+                padding: 1.2rem 0.8rem;
+            }
+            
+            .styled-map {
+                height: 300px;
+            }  
+  .services h2 {
+    font-size: 1.75rem;
   }
 
-  .footer-bottom {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
+  .services .section-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
   }
 
-  .footer-bottom .footer-legal {
-    position: static;
-    transform: none;
+  .services-grid {
+    grid-template-columns: 1fr; /* Stack cards vertically */
   }
 
-  .newsletter-form {
-    max-width: 100%;
-  }
-}
-
-/* ↓ Max width: 768px (tablets) */
-@media (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: 1fr; /* 1-column layout */
+  .service-card {
+    padding: 1rem;
   }
 
-  .footer-left,
-  .footer-pages,
-  .footer-right,
-  .newsletter-section {
-    align-items: flex-start;
-    text-align: left;
+  .service-card h3 {
+    font-size: 1.1rem;
   }
 
-  .contact-socials,
-  .social-links {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
-  .newsletter-form {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .footer-description,
-  .resources-links a,
-  .contact-info,
-  .contact-phone,
-  .contact-email {
+  .service-card p,
+  .service-features li {
     font-size: 0.9rem;
   }
-
-  .footer-bottom .footer-legal,
-  .copyright {
-    white-space: normal;
+    header {
+    flex-direction: row;
+    height: 60px;
   }
-}
 
-/* ↓ Max width: 480px (phones) */
-@media (max-width: 480px) {
-  .footer {
+  header .logo {
+    height: 40px;
+  }
+
+  header ul li a {
+    font-size: 0.9em;
+    padding: 6px 12px;
+  }
+    .main-content {
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+    .cta-button {
+        width: 100%;
+        max-width: 150px;
+        justify-content: center;
+    } 
+    .footer {
     padding: 2rem 1.5rem;
   }
 
@@ -1770,5 +1429,329 @@ header ul li a.active {
   .footer-bottom {
     gap: 0.5rem;
     padding-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+    .contact-page {
+                padding: 2rem 1rem;
+            }
+            
+            .contact-header h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-header p {
+                font-size: 1rem;
+            }
+            
+            .contact-info-box,
+            .contact-form-box,
+            .map-container {
+                padding: 1.5rem 1rem;
+            }
+            
+            .contact-info-item {
+                flex-direction: column;
+                text-align: center;
+                padding: 1.5rem;
+            }
+            
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+    .services {
+    width: 95%;
+    padding: 50px 0;
+  }
+
+  .services h2 {
+    font-size: 2rem;
+  }
+
+  .services .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-card p {
+    font-size: 0.95rem;
+  }
+
+  .service-features li {
+    font-size: 0.95rem;
+  }
+    header {
+    height: 70px;
+    padding: 0 15px;
+    justify-content: space-between;
+  }
+
+  header .logo {
+    margin-right: 0;
+    height: 45px;
+  }
+
+  header nav {
+    display: none; /* Hide nav menu on small screens (use toggle menu instead) */
+  }
+    .main-content {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+    .under-construction-section {
+        padding: 1rem 0.3rem 1rem 0.3rem;
+    }
+    .under-construction-section h1 {
+        font-size: 1.1rem;
+    }
+    .under-construction-section p {
+        font-size: 0.98rem;
+    }
+    .team-photo {
+        width: 50px;
+        height: 50px;
+    }
+    .team-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.1rem;
+    }
+    .team-row-top, .team-row-bottom {
+        gap: 1.1rem;
+    }
+    .team-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.1rem;
+    }
+    .team-member {
+        width: 90vw;
+        max-width: 260px;
+    }
+    .about-section {
+        padding: 1rem 0.3rem 1rem 0.3rem;
+    }
+    .about-section h1 {
+        font-size: 1.3rem;
+    }
+    .about-section h2 {
+        font-size: 1.1rem;
+    }
+    .about-section p, .about-section ul {
+        font-size: 0.98rem;
+    }
+    .hero-section {
+        padding: 3rem 1.5rem 2.5rem 1.5rem;
+        min-height: 50vh;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .cta-button {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    } 
+    
+    .hero-features {
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+    
+    .feature-card {
+        padding: 1rem 0.8rem;
+    }
+    
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .feature-title {
+        font-size: 1.1rem;
+    }
+    
+    .feature-description {
+        font-size: 0.9rem;
+    }
+    .footer-container {
+    grid-template-columns: 1fr; /* 1-column layout */
+  }
+
+  .footer-left,
+  .footer-pages,
+  .footer-right,
+  .newsletter-section {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .contact-socials,
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-description,
+  .resources-links a,
+  .contact-info,
+  .contact-phone,
+  .contact-email {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom .footer-legal,
+  .copyright {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 1024px){
+.contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+    .services {
+    width: 90%;
+    padding: 60px 0;
+  }
+
+  .servicescontainer {
+    width: 90%;
+    padding: 0 15px;
+  }
+
+  .services h2 {
+    font-size: 2.5rem;
+  }
+
+  .services .section-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .services-grid {
+    gap: 1.5rem;
+  }
+    header {
+    padding: 0 20px;
+  }
+
+  header .logo {
+    margin-right: 200px;
+    height: 50px;
+  }
+
+  header ul {
+    gap: 20px;
+  }
+
+  header ul li a {
+    font-size: 1em;
+  }
+    .main-content {
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+   .under-construction-section {
+        max-width: 98vw;
+        padding: 1.5rem 0.7rem 1.5rem 0.7rem;
+    }
+    .under-construction-section h1 {
+        font-size: 1.5rem;
+    }
+    .about-section {
+        max-width: 98vw;
+        padding: 1.5rem 0.7rem 1.5rem 0.7rem;
+    }
+    .about-section h1 {
+        font-size: 2rem;
+    }
+    .team-member {
+        width: 110px;
+        padding: 0.7rem 0.3rem 0.7rem 0.3rem;
+    }
+    .team-photo {
+        width: 60px;
+        height: 60px;
+    }
+    .team-row {
+        gap: 1.2rem;
+    }
+    .team-row-top {
+        gap: 2rem;
+    }
+    .team-row-bottom {
+        gap: 1.1rem;
+    }
+    .team-section {
+        gap: 1.2rem 1.2rem;
+    }
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .hero-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .footer-container {
+    grid-template-columns: 1fr 1fr; /* 2-column layout */
+    gap: 1.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer-bottom .footer-legal {
+    position: static;
+    transform: none;
+  }
+
+  .newsletter-form {
+    max-width: 100%;
   }
 }
