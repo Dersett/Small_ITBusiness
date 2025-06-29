@@ -394,12 +394,12 @@ header ul li a.active {
 
 .hero-features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(2100px, 1fr));
     gap: 2rem;
     margin-top: 4rem;
     max-width: 1200px;
     animation: fadeInUp 1s cubic-bezier(.39,.575,.565,1) 0.8s both;
-    width:90%;
+    width:100%;
     justify-items: center;
 }
 
