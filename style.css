@@ -1210,6 +1210,11 @@ header ul li a.active {
     padding-left: 10px;
     padding-right: 10px;
   }
+    .cta-button {
+        width: 100%;
+        max-width: 150px;
+        justify-content: center;
+    } 
 }
 
 @media (max-width: 768px) {
@@ -1386,6 +1391,11 @@ header ul li a.active {
         font-size: 1rem;
         margin-bottom: 2rem;
     }
+    .cta-button {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    } 
     
     .hero-features {
         margin-top: 2rem;
