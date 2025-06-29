@@ -1034,7 +1034,6 @@ header ul li a.active {
     background: linear-gradient(135deg, #f8fafc, #e2e8f0);
     color: #1e293b;
     width:80%;
-    overflow-x: auto;
 }
 .servicescontainer {
     margin: 0 auto;
@@ -1398,4 +1397,90 @@ header ul li a.active {
         max-width: 300px;
         justify-content: center;
     }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .services {
+    width: 90%;
+    padding: 60px 0;
+  }
+
+  .servicescontainer {
+    width: 90%;
+    padding: 0 15px;
+  }
+
+  .services h2 {
+    font-size: 2.5rem;
+  }
+
+  .services .section-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .services-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    width: 95%;
+    padding: 50px 0;
+  }
+
+  .services h2 {
+    font-size: 2rem;
+  }
+
+  .services .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-card p {
+    font-size: 0.95rem;
+  }
+
+  .service-features li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services h2 {
+    font-size: 1.75rem;
+  }
+
+  .services .section-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr; /* Stack cards vertically */
+  }
+
+  .service-card {
+    padding: 1rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-card p,
+  .service-features li {
+    font-size: 0.9rem;
+  }
 }
