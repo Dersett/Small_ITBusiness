@@ -1112,10 +1112,6 @@ header ul li a.active {
 }
 /* Responsive adjustments */
 @media (max-width: 480px) {
-    .footer {
-    padding: 2rem 0.75rem; /* Even less horizontal padding */
-  }
-
     .contact-page {
                 padding: 1.5rem 0.5rem;
             }
@@ -1133,43 +1129,49 @@ header ul li a.active {
             .styled-map {
                 height: 300px;
             }
-    
-  .footer-container {
-    grid-template-columns: 1fr; /* Stack vertically */
-    gap: 1.5rem;
-    padding: 0;
-    width: 100%;
-  }
+   .footer {
+  padding: 1.5rem 0.5rem; /* Slightly smaller padding */
+}
 
-  .footer-description,
-  .resources-links a,
-  .contact-info,
-  .newsletter-section p {
-    font-size: 0.85rem;
-  }
+.footer-container {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 0;
+  width: 100%;
+}
 
-  .footer-pages h3,
-  .contact-section h3,
-  .newsletter-section h3 {
-    font-size: 1rem;
-  }
+.footer-description,
+.resources-links a,
+.contact-info,
+.newsletter-section p {
+  font-size: 0.75rem; /* Smaller text */
+}
 
-  .newsletter-form {
-    max-width: 100%;
-    width: 100%;
-  }
+.footer-pages h3,
+.contact-section h3,
+.newsletter-section h3 {
+  font-size: 0.9rem; /* Slightly smaller heading */
+}
 
-  .newsletter-btn,
-  .newsletter-input {
-    font-size: 0.85rem;
-    padding: 8px;
-    width: 100%;
-  }
+.newsletter-form {
+  max-width: 100%;
+  width: 100%;
+}
 
-  .footer-bottom {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
+.newsletter-btn,
+.newsletter-input {
+  font-size: 0.75rem;
+  padding: 6px; /* Less padding */
+  width: 100%;
+}
+
+.footer-bottom {
+  flex-direction: column;
+  gap: 0.5rem; /* Less spacing */
+  align-items: center; /* Center align */
+  text-align: center; /* Optional: if things feel too wide */
+}
+
     .services h2 {
     font-size: 1.75rem;
   }
