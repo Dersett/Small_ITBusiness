@@ -1286,64 +1286,6 @@ header ul li a.active {
 }
 
 @media (max-width: 900px) {
-    nav {
-        position: relative;
-    }
-    .menu-toggle {
-        display: flex;
-    }
-    nav ul {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: #222;
-        flex-direction: column;
-        width: 180px;
-        border-radius: 0 0 10px 10px;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.13);
-        padding: 18px 0 18px 0;
-        gap: 0;
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(-10px);
-        transition: all 0.3s cubic-bezier(.39,.575,.565,1);
-        z-index: 1099;
-    }
-    nav ul.active {
-        opacity: 1;
-        pointer-events: auto;
-        transform: translateY(0);
-    }
-    nav ul li {
-        width: 100%;
-        text-align: left;
-        margin: 0;
-    }
-    nav ul li a {
-        display: block;
-        width: 100%;
-        padding: 12px 24px;
-        font-size: 1.1em;
-        border-radius: 0;
-        color: #fff;
-        background: none;
-        border-bottom: 1px solid #333;
-        transition: background 0.2s, color 0.2s;
-    }
-    nav ul li:last-child a {
-        border-bottom: none;
-    }
-    nav ul li a:hover,
-    nav ul li a.active {
-        background: #333;
-        color: #7b2ff2;
-        -webkit-background-clip: unset;
-        background-clip: unset;
-        -webkit-text-fill-color: unset;
-    }
-    header .logo {
-        margin-right: 20px;
-    }
     .under-construction-section {
         max-width: 98vw;
         padding: 1.5rem 0.7rem 1.5rem 0.7rem;
