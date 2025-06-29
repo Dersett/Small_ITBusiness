@@ -359,6 +359,9 @@ header ul li a.active {
     letter-spacing: 0.5px;
     position: relative;
     overflow: hidden;
+    max-width:300px;
+    width: 100%;
+    justify-content: center;
 }
 
 .cta-primary {
@@ -1536,11 +1539,6 @@ header ul li a.active {
         flex-direction: column;
         gap: 1rem;
     }
-    
-    .cta-button {
-        width: 100%;
-        justify-content: center;
-    } 
 }
 
 .contact-page {
