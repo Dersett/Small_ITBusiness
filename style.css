@@ -212,6 +212,7 @@ header .logo {
     height: 60px;
     margin-left: 0;
     margin-right: 350px; /* Space between logo and nav */
+    margin-top: 10px;
 }
 
 header nav {
