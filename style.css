@@ -1,33 +1,4 @@
-/* Hamburger Menu Styles */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 36px;
-    height: 36px;
-    cursor: pointer;
-    margin-left: 20px;
-    z-index: 1100;
-}
-.menu-toggle span {
-    display: block;
-    width: 28px;
-    height: 4px;
-    margin: 4px 0;
-    background: #fff;
-    border-radius: 2px;
-    transition: 0.3s;
-}
-.menu-toggle.open span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-.menu-toggle.open span:nth-child(2) {
-    opacity: 0;
-}
-.menu-toggle.open span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
+
 /* Under Construction Section Responsive Styles */
 .under-construction-section {
     background: #fff;
