@@ -91,6 +91,20 @@
     background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
     width:100%;
 }
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(123, 47, 242, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(243, 87, 168, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 106, 0, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
 .about-div {
     color:#ffffff;
     border-radius: 18px;
@@ -433,7 +447,6 @@ header ul li a.active {
     color: #ccc;
     line-height: 1.6;
     font-size: 1rem;
-    text-align: justify;
 }
 
 /* Animation keyframes */
