@@ -394,7 +394,7 @@ header ul li a.active {
 
 .hero-features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin-top: 4rem;
     max-width: 1200px;
@@ -409,7 +409,6 @@ header ul li a.active {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 18px;
     padding: 2rem 1.5rem;
-    text-align: justify;
     transition: all 0.3s cubic-bezier(.39,.575,.565,1);
     position: relative;
     overflow: hidden;
@@ -445,16 +444,18 @@ header ul li a.active {
 }
 
 .feature-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #fff;
+    text-align: center;
 }
 
 .feature-description {
     color: #ccc;
     line-height: 1.6;
     font-size: 1rem;
+    text-align: justify;
 }
 
 /* Animation keyframes */
