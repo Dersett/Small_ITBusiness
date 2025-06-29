@@ -1034,6 +1034,7 @@ header ul li a.active {
     background: linear-gradient(135deg, #f8fafc, #e2e8f0);
     color: #1e293b;
     width:80%;
+    overflow-x: auto;
 }
 .servicescontainer {
     margin: 0 auto;
