@@ -1223,11 +1223,6 @@ header ul li a.active {
 }
 
 @media (max-width: 768px) {
-    .footer {
-    padding: 2rem 1rem; /* Reduce horizontal padding */
-    overflow-x: hidden;
-  }
-
     .contact-page {
                 padding: 2rem 1rem;
             }
@@ -1257,7 +1252,11 @@ header ul li a.active {
                 margin-bottom: 1rem;
             }
 
-  .footer-container {
+  .footer {
+    padding: 2rem 1rem; /* Reduce horizontal padding */
+    overflow-x: hidden;
+  }
+    .footer-container {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
     padding: 0;
@@ -1427,26 +1426,11 @@ header ul li a.active {
 }
 
 @media (max-width: 1024px) {
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 2rem;
-  }
-
 .contact-container {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
 
-  .footer-bottom {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-
-  .footer-bottom .footer-legal {
-    position: static;
-    transform: none;
-  }
     .services {
     width: 90%;
     padding: 60px 0;
