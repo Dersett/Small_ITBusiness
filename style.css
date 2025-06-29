@@ -1128,57 +1128,8 @@ header ul li a.active {
             
             .styled-map {
                 height: 300px;
-            }
-   .footer {
-  padding: 1rem 0.25rem; /* Slightly smaller padding */
-       overflow-x: hidden;
-}
-
-.footer-container {
-  grid-template-columns: 1fr;
-  gap: 0.5rem;
-  padding: 0;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.footer-description,
-.resources-links a,
-.contact-info,
-.newsletter-section p {
-  font-size: 0.5rem; /* Smaller text */
-}
-
-.footer-pages h3,
-.contact-section h3,
-.newsletter-section h3 {
-  font-size: 0.9rem; /* Slightly smaller heading */
-}
-
-.newsletter-form {
-  max-width: 50%;
-  width: 50%;
-}
-
-.newsletter-btn,
-.newsletter-input {
-  font-size: 0.75rem;
-  padding: 6px; /* Less padding */
-  width: 100%;
-}
-
-.footer-bottom {
-  flex-direction: column;
-  gap: 0.5rem; /* Less spacing */
-  align-items: center; /* Center align */
-  text-align: center; /* Optional: if things feel too wide */
-}
-    .footer-bottom .footer-legal {
-    position: static;
-    transform: none;
-  }
-
-    .services h2 {
+            }  
+  .services h2 {
     font-size: 1.75rem;
   }
 
@@ -1257,42 +1208,6 @@ header ul li a.active {
                 margin-right: 0;
                 margin-bottom: 1rem;
             }
-
-  .footer {
-    padding: 2rem 1rem; /* Reduce horizontal padding */
-    overflow-x: hidden;
-  }
-    .footer-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
-    padding: 0;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .newsletter-form {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .footer-description,
-  .resources-links a,
-  .contact-info {
-    font-size: 0.9rem;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-    padding-top: 1.5rem;
-  }
-
-  .footer-bottom .footer-legal {
-    position: static;
-    transform: none;
-  }
     .services {
     width: 95%;
     padding: 50px 0;
