@@ -1131,6 +1131,7 @@ header ul li a.active {
             }
    .footer {
   padding: 1.5rem 0.5rem; /* Slightly smaller padding */
+       overflow-x: hidden;
 }
 
 .footer-container {
