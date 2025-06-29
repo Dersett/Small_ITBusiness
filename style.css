@@ -1,4 +1,3 @@
-
 /* Under Construction Section Responsive Styles */
 .under-construction-section {
     background: #fff;
@@ -501,7 +500,7 @@ header ul li a.active {
 }
 /* Footer styles */
 .footer {
-    background-color: #1a1a1a;
+    background-color: #000000;
     color: #ffffff;
     padding: 3rem 2rem 2rem;
 }
