@@ -1109,14 +1109,21 @@ header ul li a.active {
 }
 /* Responsive adjustments */
 @media (max-width: 480px) {
-    .footer-container {
-    grid-template-columns: 1fr; /* Stack all columns vertically */
-    gap: 2rem;
+    .footer {
+    padding: 2rem 0.75rem; /* Even less horizontal padding */
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr; /* Stack vertically */
+    gap: 1.5rem;
+    padding: 0;
+    width: 100%;
   }
 
   .footer-description,
+  .resources-links a,
   .contact-info,
-  .resources-links a {
+  .newsletter-section p {
     font-size: 0.85rem;
   }
 
@@ -1126,18 +1133,21 @@ header ul li a.active {
     font-size: 1rem;
   }
 
-  .newsletter-section p {
-    font-size: 0.85rem;
+  .newsletter-form {
+    max-width: 100%;
+    width: 100%;
   }
 
   .newsletter-btn,
   .newsletter-input {
     font-size: 0.85rem;
     padding: 8px;
+    width: 100%;
   }
 
   .footer-bottom {
-    padding-top: 1.5rem;
+    flex-direction: column;
+    gap: 0.75rem;
   }
 }
 @media (max-width: 600px) {
@@ -1238,51 +1248,41 @@ header ul li a.active {
 }
 @media (max-width: 768px) {
     .footer {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1rem; /* Reduce horizontal padding */
+    overflow-x: hidden;
   }
 
   .footer-container {
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 1.2rem;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .newsletter-form {
     max-width: 100%;
+    width: 100%;
   }
 
-  .social-links {
-    justify-content: center;
+  .footer-description,
+  .resources-links a,
+  .contact-info {
+    font-size: 0.9rem;
   }
-    .usage-content {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-    .usage-icon {
-        float: none;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    .hero-section {
-        padding: 3rem 1rem 4rem 1rem;
-        min-height: 60vh;
-    }
-    
-    .hero-title {
-        font-size: 2rem;
-        letter-spacing: 1px;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-    
-    .hero-description {
-        font-size: 1.1rem;
-    }
-    
-    .feature-card {
-        padding: 1.5rem 1rem;
-    }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+
+  .footer-bottom .footer-legal {
+    position: static;
+    transform: none;
+  }
 }
 
 @media (max-width: 900px) {
