@@ -1539,7 +1539,6 @@ header ul li a.active {
     
     .cta-button {
         width: 100%;
-        max-width: 300px;
         justify-content: center;
     } 
 }
