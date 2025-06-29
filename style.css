@@ -1274,7 +1274,7 @@ header ul li a.active {
     display: none; /* Hide nav menu on small screens (use toggle menu instead) */
   }
     .main-content {
-    padding-top: 60px;
+    padding-top: 50px;
     padding-left: 10px;
     padding-right: 10px;
   }
