@@ -1392,6 +1392,9 @@ header ul li a.active {
         max-width: 150px;
         justify-content: center;
     }
+    .preloaderimg {
+      height: 50px;
+  }
 }
 
 @media (max-width: 768px) {
