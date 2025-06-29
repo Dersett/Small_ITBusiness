@@ -1323,6 +1323,7 @@ header ul li a.active {
     .hero-section {
         padding: 2rem 0.5rem 3rem 0.5rem;
         min-height: 50vh;
+        margin: 10px;
     }
     
     .hero-title {
