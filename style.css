@@ -305,7 +305,7 @@ header ul li a.active {
 
 .hero-title {
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 1.5rem;
     color: transparent;
     background: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
@@ -319,7 +319,7 @@ header ul li a.active {
 
 .hero-subtitle {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 2rem;
     color: #cccccc;
     max-width: 800px;
