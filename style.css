@@ -1663,3 +1663,112 @@ header ul li a.active {
                 transform: translateY(0);
             }
         }
+
+/* ========================
+   Responsive Footer Styles
+   ======================== */
+
+/* ↓ Max width: 1024px (small laptops/tablets) */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr; /* 2-column layout */
+    gap: 1.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer-bottom .footer-legal {
+    position: static;
+    transform: none;
+  }
+
+  .newsletter-form {
+    max-width: 100%;
+  }
+}
+
+/* ↓ Max width: 768px (tablets) */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* 1-column layout */
+  }
+
+  .footer-left,
+  .footer-pages,
+  .footer-right,
+  .newsletter-section {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .contact-socials,
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-description,
+  .resources-links a,
+  .contact-info,
+  .contact-phone,
+  .contact-email {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom .footer-legal,
+  .copyright {
+    white-space: normal;
+  }
+}
+
+/* ↓ Max width: 480px (phones) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 1.5rem;
+  }
+
+  .footer-description {
+    font-size: 0.85rem;
+  }
+
+  .resources-links a,
+  .contact-info,
+  .contact-phone,
+  .contact-email,
+  .newsletter-section p {
+    font-size: 0.85rem;
+  }
+
+  .footer-pages h3,
+  .contact-section h3,
+  .newsletter-section h3 {
+    font-size: 1.1em;
+  }
+
+  .newsletter-input,
+  .newsletter-btn {
+    font-size: 0.85em;
+    padding: 8px;
+  }
+
+  .social-links a {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .footer-bottom {
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
+}
