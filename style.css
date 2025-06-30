@@ -1629,7 +1629,7 @@ header ul li a.active {
   }
 
   header ul li a {
-    font-size: 0.75em;
+    font-size: 0.5em;
   }
     .main-content {
     padding-top: 70px;
@@ -2227,6 +2227,6 @@ header ul li a.active {
 }
 @media (max-width: 1500px){
   header ul li a {
-      font-size: 1em;
+      font-size: 0.75em;
     }
 }
