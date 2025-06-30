@@ -987,9 +987,6 @@ header ul li a.active {
     padding: 20px;
     margin: 15px 0;
 }
-.servicefeatures ul {
-    margin-left: 20px;
-}
 .highlight-section {
     background: linear-gradient(135deg, #7B68EE, #6A5ACD);
     color: white;
