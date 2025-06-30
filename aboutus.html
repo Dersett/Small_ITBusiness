@@ -15,6 +15,7 @@
     <header>
         <a href="index.html"><img class="logo" src="images/logo.png" alt="Threat Sense Logo"></a>
         <nav>
+        
             <ul>
                 <li><a href="index.html" class="home">Home</a></li>
                 <li><a href="aboutus.html" class="aboutus active">About Us</a></li>
@@ -22,6 +23,21 @@
                 <li><a href="contactus.html" class="conactus">Contact Us</a></li>
             </ul>
         </nav>
+        <!-- Hamburger icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Mobile nav -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="active">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="subscriptions.html">Subscriptions</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+        
     </header>
     <main class="main-content">
         <section class="about-section">
@@ -204,5 +220,15 @@
     }, 2000); // Delay before starting fade out
   });
 </script>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('show');
+        });
+</script>
+    
 </body>
 </html>
