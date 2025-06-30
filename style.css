@@ -1486,6 +1486,7 @@ header ul li a.active {
   header .logo {
     margin-right: 0;
     height: 45px;
+    margin-right:50px;
   }
 
   header nav {
