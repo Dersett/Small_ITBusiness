@@ -22,6 +22,20 @@
                 <li><a href="contactus.html" class="conactus">Contact Us</a></li>
             </ul>
         </nav>
+        <!-- Hamburger icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Mobile nav -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="active">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="subscriptions.html">Subscriptions</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
     </header>
     <main class="main-content">
         <div class="container">
@@ -294,7 +308,14 @@
     }, 2000); // Delay before starting fade out
   });
 </script>
+<script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
 
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('show');
+        });
+</script>
 
 </body>
 </html>
