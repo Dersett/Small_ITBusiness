@@ -163,5 +163,15 @@
             input.value = value;
         }
     </script>
+    <script>
+    // Allow only if coming from Page A
+    const allowedReferrer = "https://dersett.github.io/Small_ITBusiness/subscriptions.html";
+    
+    if (document.referrer !== allowedReferrer) {
+      // Redirect elsewhere
+      window.location.href = "https://dersett.github.io/Small_ITBusiness/subscriptions.html";
+    }
+    </script>
+
 </body>
 </html>
