@@ -1124,6 +1124,7 @@ header ul li a.active {
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
             align-items: start;
+            height: 714px; 
         }
         
         .contact-header {
@@ -1150,12 +1151,6 @@ header ul li a.active {
             max-width: 600px;
             margin: 0 auto;
             line-height: 1.6;
-        }
-        .contact-info-section {
-           height: 714 px;
-        }
-        .contact-form-section {
-           height: 714 px;
         }
         /* Contact Info Box Styles */
         .contact-info-box {
