@@ -1209,19 +1209,6 @@ header ul li a.active {
             color: #64748b;
             line-height: 1.5;
         }
-.social-media a {
-  font-size: 16px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  margin: 0 2px;
-  border-radius: 50%;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  transition: 0.3s;
-}       
         /* Contact Form Box Styles */
         .contact-form-box {
             background: #fff;
