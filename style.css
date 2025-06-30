@@ -981,14 +981,14 @@ header ul li a.active {
     font-size: 1.2rem;
     color: white;
 }
-.service-features {
+.servicefeatures {
     background: #f8f9fa;
     border-radius: 8px;
     padding: 20px;
     margin: 15px 0;
     border-left: 4px solid #3498db;
 }
-.service-features ul {
+.servicefeatures ul {
     margin-left: 20px;
 }
 .highlight-section {
