@@ -1161,6 +1161,7 @@ header ul li a.active {
             padding: 2rem 1.5rem 1.5rem 1.5rem;
             margin-bottom: 2rem;
             animation: fadeInUp 0.8s cubic-bezier(.39,.575,.565,1) both;
+            height: 682 px;
         }
         
         .contact-info-box h3 {
@@ -1224,6 +1225,7 @@ header ul li a.active {
             box-shadow: 0 2px 8px rgba(123,47,242,0.07);
             padding: 2rem 1.5rem 1.5rem 1.5rem;
             animation: fadeInUp 0.8s cubic-bezier(.39,.575,.565,1) both;
+            height: 682 px;
         }
         
         .contact-form-box h3 {
