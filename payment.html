@@ -87,7 +87,7 @@
     <main class="payment-main-content">
         <section class="payment-section">
             <form class="payment-form" id="paymentForm" onsubmit="return handlePayment(event)">
-                <label for="plan">Subscription Plan</label>
+                <label for="plan"><b>Subscription Plan</b></label>
                 <select id="plan" name="plan" required onchange="updateSummary()">
                     <option value="">-- Choose a Plan --</option>
                     <option value="micro">Micro Business</option>
@@ -95,17 +95,17 @@
                     <option value="large">Large Business</option>
                 </select>
                 <div id="paymentSummary" class="payment-summary"></div>
-                <label for="name">Name</label>
+                <label for="name"><b>Name</b></label>
                 <input type="text" id="name" name="name" placeholder="Full Name" required>
-                <label for="card">Card Number</label>
+                <label for="card"><b>Card Number</b></label>
                 <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" maxlength="19" required pattern="[0-9 ]{19}" oninput="formatCardNumber(this)">
                 <div style="display: flex; gap: 1rem;">
                     <div style="flex:1;">
-                        <label for="expiry">Expiry</label><br><br>
+                        <label for="expiry"><b>Expiry</b></label><br><br>
                         <input type="text" id="expiry" name="expiry" placeholder="MM/YY" maxlength="5" required pattern="[0-9]{2}/[0-9]{2}" oninput="formatExpiry(this)">
                     </div>
                     <div style="flex:1;">
-                        <label for="cvc">CVC / CVV</label><br><br>
+                        <label for="cvc"><b>CVC / CVV</b></label><br><br>
                         <input type="text" id="cvc" name="cvc" placeholder="123" maxlength="4" required pattern="[0-9]{3,4}" oninput="formatCVC(this)">
                     </div>
                 </div>
