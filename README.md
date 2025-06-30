@@ -1,4 +1,4 @@
 # Small_ITBusiness
-Official Website for Threat Sense IOT Business 
+Official Website of Threat Sense IDS for IoT Businesses
 
 Website link: https://dersett.github.io/Small_ITBusiness/
