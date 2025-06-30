@@ -2232,4 +2232,7 @@ header ul li a.active {
   header ul {
     gap: 20px;
   }
+  header .logo {
+    margin-right: 150px; /* Space between logo and nav */
+}
 }
