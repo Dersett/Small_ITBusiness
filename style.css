@@ -1151,7 +1151,12 @@ header ul li a.active {
             margin: 0 auto;
             line-height: 1.6;
         }
-        
+        .contact-info-section {
+           height: 714 px;
+        }
+        .contact-form-section {
+           height: 714 px;
+        }
         /* Contact Info Box Styles */
         .contact-info-box {
             background: #fff;
