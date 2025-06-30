@@ -1781,3 +1781,349 @@ header ul li a.active {
     padding-top: 1rem;
   }
 }
+
+/* Pricing Section Styles */
+.pricing-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+    color: #fff;
+    padding: 4rem 2rem 5rem 2rem;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(123, 47, 242, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(243, 87, 168, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 106, 0, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    width: 90%;
+}
+
+.hero-content {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.hero-content .hero-subtitle {
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+}
+
+.hero-content .hero-description {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.pricing-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.pricing-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 8px 32px rgba(123, 47, 242, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(123, 47, 242, 0.15);
+}
+
+.pricing-card.featured {
+    border: 2px solid #7b2ff2;
+    transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #7b2ff2, #f357a8);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(123, 47, 242, 0.3);
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.plan-name {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.plan-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.price-range {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #7b2ff2;
+}
+
+.price-period {
+    font-size: 1.2rem;
+    color: #666;
+    margin-left: 0.5rem;
+}
+
+.annual-discount {
+    color: #28a745;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.pricing-features {
+    margin-bottom: 2rem;
+}
+
+.feature-item {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #444;
+    line-height: 1.6;
+}
+
+.feature-item:last-child {
+    border-bottom: none;
+}
+
+.feature-item strong {
+    color: #1a1a1a;
+}
+
+.feature-sublist {
+    margin: 0.5rem 0 0 1rem;
+    padding: 0;
+}
+
+.feature-sublist li {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.feature-sublist li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #7b2ff2;
+    font-weight: bold;
+}
+
+.pricing-cta {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #7b2ff2, #f357a8);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(123, 47, 242, 0.3);
+}
+
+.pricing-cta:hover {
+    background: linear-gradient(90deg, #6a28d9, #e11d48);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(123, 47, 242, 0.4);
+}
+
+/* Add-ons Section */
+.addons-section {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 2px solid #e0e0e0;
+}
+
+.addons-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.addon-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.addon-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(123, 47, 242, 0.15);
+}
+
+.addon-name {
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.addon-description {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.addon-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #7b2ff2;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .pricing-card {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .pricing-card.featured {
+        transform: none;
+    }
+    
+    .pricing-card.featured:hover {
+        transform: translateY(-8px);
+    }
+    
+    .hero-content .hero-subtitle {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content .hero-description {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .pricing-title {
+        font-size: 2rem;
+    }
+    
+    .plan-name {
+        font-size: 1.5rem;
+    }
+    
+    .price-range {
+        font-size: 2.5rem;
+    }
+    
+    .addons-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-section {
+        padding: 2rem 1rem;
+    }
+    
+    .pricing-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .pricing-title {
+        font-size: 1.8rem;
+    }
+    
+    .price-range {
+        font-size: 2rem;
+    }
+}
