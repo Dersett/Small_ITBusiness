@@ -1486,7 +1486,7 @@ header ul li a.active {
   header .logo {
     margin-right: 0;
     height: 45px;
-    margin-right:50px;
+    margin-right: 50px;
   }
 
   header nav {
@@ -2226,7 +2226,7 @@ header ul li a.active {
         margin-right: 6px;
     }
 }
-@media (max-width: 1500px){
+@media (max-width: 1200px){
   header ul li a {
       font-size: 0.75em;
     }
