@@ -82,7 +82,12 @@
             display: none;
         }
         @media (max-width: 480px) {
-            width: 90%;
+            .payment-section {
+                width: 300px;
+            }
+            .expiry{
+                width: 90% !Important;
+            }
         }
     </style>
 </head>
@@ -102,7 +107,7 @@
                 <input type="text" id="name" name="name" placeholder="Full Name" required>
                 <label for="card"><b>Card Number</b></label>
                 <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" maxlength="19" required pattern="[0-9 ]{19}" oninput="formatCardNumber(this)">
-                <div style="display: flex; gap: 1rem;">
+                <div class="expiry" style="display: flex; gap: 1rem;">
                     <div style="flex:1;">
                         <label for="expiry"><b>Expiry</b></label><br><br>
                         <input type="text" id="expiry" name="expiry" placeholder="MM/YY" maxlength="5" required pattern="[0-9]{2}/[0-9]{2}" oninput="formatExpiry(this)">
