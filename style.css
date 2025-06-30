@@ -1214,21 +1214,14 @@ header ul li a.active {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  color: var(--default-color);
+  color: black;
   margin: 0 2px;
   border-radius: 50%;
   text-align: center;
   width: 40px;
   height: 40px;
   transition: 0.3s;
-}
-
-.social-media a:hover {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-}
-        
+}       
         /* Contact Form Box Styles */
         .contact-form-box {
             background: #fff;
