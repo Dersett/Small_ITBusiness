@@ -2126,3 +2126,86 @@ header ul li a.active {
         font-size: 2rem;
     }
 }
+@media (max-width: 480px) {
+    .privacy-content,
+    .container,
+    .content {
+        padding: 20px 15px;
+    }
+
+    .privacy-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .effective-date {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .intro-section,
+    .privacy-section,
+    .highlight-box,
+    .rights-list,
+    .contact-highlight,
+    .important-note,
+    .important-notice,
+    .highlight-section,
+    .cinfo,
+    .servicefeatures {
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 8px;
+    }
+
+    .privacy-section h2 {
+        font-size: 1.2rem;
+        padding-left: 10px;
+    }
+
+    .rights-list li {
+        font-size: 0.95rem;
+        padding-left: 20px;
+    }
+
+    .rights-list li:before {
+        font-size: 1rem;
+        left: 0;
+    }
+
+    .contact-email-link {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .usage-item {
+        padding: 20px;
+        margin: 12px 0;
+    }
+
+    .usage-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        margin-right: 15px;
+    }
+
+    .usage-content {
+        margin-left: 55px;
+        font-size: 0.95rem;
+    }
+
+    .important-notice h3 {
+        font-size: 1rem;
+    }
+
+    .cinfo h3 {
+        font-size: 1.1rem;
+    }
+
+    .section-number {
+        width: 26px;
+        height: 26px;
+        font-size: 0.8rem;
+        margin-right: 8px;
+    }
+}
