@@ -1,4 +1,4 @@
 # Small_ITBusiness
-Small front end website for Small IT business module, for ThreatSense IOT business 
+Official Website for Threat Sense IOT Business 
 
 Website link: https://dersett.github.io/Small_ITBusiness/
