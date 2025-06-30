@@ -2236,3 +2236,80 @@ header ul li a.active {
     margin-right: 150px; /* Space between logo and nav */
 }
 }
+
+
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    gap: 5px;
+    padding-right: 40px;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile nav menu */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    padding: 20px 0;
+    z-index: 999;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    transition: background 0.3s, color 0.3s;
+}
+
+.mobile-nav a:hover,
+.mobile-nav a.active {
+    background: none;
+    color: transparent;
+    background-image: linear-gradient(90deg, #7b2ff2, #f357a8, #ff6a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    header nav,
+    header ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-nav.show {
+        display: flex;
+    }
+
+    header .logo {
+        margin-right: 0;
+    }
+}
