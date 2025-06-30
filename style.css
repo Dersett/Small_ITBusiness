@@ -1,3 +1,22 @@
+/* Scrollbar */
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2b2b2b; /* dark background like Image 1 */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* thumb color */
+  border-radius: 10px;
+  border: 2px solid #2b2b2b; /* match track background */
+}
+* {
+  scrollbar-color: #888 #2b2b2b; /* thumb and track */
+  scrollbar-width: thin;
+}
 /* Under Construction Section Responsive Styles */
 .under-construction-section {
     background: #fff;
