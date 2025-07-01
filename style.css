@@ -2173,12 +2173,10 @@ header ul li a.active {
         margin: 10px 0;
         border-radius: 6px;
         max-width: 250px;
-    }
-    .intro-section{
-      font-size: 12px;
+        font-size: 12px;
     }
     .intro-section a{
-      font-size: 10px;
+      font-size: 8px;
     }
     .privacy-section h2 {
         font-size: 1.05rem;
