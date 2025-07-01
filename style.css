@@ -2276,7 +2276,6 @@ header ul li a.active {
     left: 0;
     width: 100%;
     background: #000;
-    padding: 10px 0;
     z-index: 999;
 }
 
