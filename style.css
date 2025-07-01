@@ -2276,7 +2276,7 @@ header ul li a.active {
     left: 0;
     width: 100%;
     background: #000;
-    padding: 20px 0;
+    padding: 10px 0;
     z-index: 999;
 }
 
@@ -2301,7 +2301,7 @@ header ul li a.active {
     font-size: 60px;
     color: white;
     text-align: right;
-    padding: 10px 20px;
+    padding: 0px 20px;
     cursor: pointer;
     width: 90%;
 }
