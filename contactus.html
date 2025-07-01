@@ -31,6 +31,7 @@
 
         <!-- Mobile nav -->
         <div class="mobile-nav" id="mobileNav">
+            <div class="close-btn" id="closeBtn">&times;</div>
             <a href="index.html">Home</a>
             <a href="aboutus.html">About</a>
             <a href="subscriptions.html">Subscriptions</a>
@@ -278,14 +279,18 @@
     }, 2000); // Delay before starting fade out
   });
 </script>
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const mobileNav = document.getElementById('mobileNav');
-
-        hamburger.addEventListener('click', () => {
-            mobileNav.classList.toggle('show');
-        });
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const closeBtn = document.getElementById('closeBtn');
+    
+    hamburger.addEventListener('click', () => {
+        mobileNav.classList.toggle('show');
+    });
+    
+    closeBtn.addEventListener('click', () => {
+        mobileNav.classList.remove('show');
+    });
 </script>
 </body>
 </html>
-
