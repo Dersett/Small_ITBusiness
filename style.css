@@ -2298,11 +2298,12 @@ header ul li a.active {
     -webkit-text-fill-color: transparent;
 }
 .close-btn {
-    font-size: 30px;
+    font-size: 60px;
     color: white;
     text-align: right;
     padding: 10px 20px;
     cursor: pointer;
+    width: 90%;
 }
 
 /* Responsive */
@@ -2328,4 +2329,14 @@ header ul li a.active {
     header .logo {
         margin-right: 0;
     }
+}
+@media (max-width: 400px) {
+  .close-btn {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .close-btn {
+    width: 85%;
+  }
 }
