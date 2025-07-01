@@ -1774,6 +1774,10 @@ header ul li a.active {
     font-size: 0.85rem;
   }
 
+  .contact-info-item {
+    padding: 1rem;
+  }
+  
   .footer-pages h3,
   .contact-section h3,
   .newsletter-section h3 {
