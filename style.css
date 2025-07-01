@@ -2297,6 +2297,13 @@ header ul li a.active {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.close-btn {
+    font-size: 30px;
+    color: white;
+    text-align: right;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
