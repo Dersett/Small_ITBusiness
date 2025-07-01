@@ -2176,19 +2176,10 @@ header ul li a.active {
     }
     .intro-section{
       font-size: 12px;
-      word-break: break-word;
-      /* or */
-      overflow-wrap: break-word;
-      white-space: normal;
     }
-  .intro-section a{
-      font-size: 12px;
-      word-break: break-word;
-      /* or */
-      overflow-wrap: break-word;
-      white-space: normal;
+    .intro-section a{
+      font-size: 10px;
     }
-
     .privacy-section h2 {
         font-size: 1.05rem;
         padding-left: 6px;
