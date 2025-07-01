@@ -2179,6 +2179,14 @@ header ul li a.active {
       word-break: break-word;
       /* or */
       overflow-wrap: break-word;
+      white-space: normal;
+    }
+  .intro-section a{
+      font-size: 12px;
+      word-break: break-word;
+      /* or */
+      overflow-wrap: break-word;
+      white-space: normal;
     }
 
     .privacy-section h2 {
