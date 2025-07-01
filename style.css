@@ -1,16 +1,16 @@
-/* Hide scrollbar for mobile devices (max-width: 480px) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), 
+       screen and (min-width: 481px) and (max-width: 768px) {
   body {
-    overflow: hidden;
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Webkit browsers like Chrome, Safari */
+  body::-webkit-scrollbar {
+    display: none;
   }
 }
 
-/* Hide scrollbar for tablets (max-width: 768px) */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  body {
-    overflow: hidden;
-  }
-}
 /* Scrollbar */
 /* For WebKit browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
