@@ -274,13 +274,17 @@
 </script>
 
 <script>
-        const hamburger = document.getElementById('hamburger');
-        const mobileNav = document.getElementById('mobileNav');
-
-        hamburger.addEventListener('click', () => {
-            mobileNav.classList.toggle('show');
-        });
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const closeBtn = document.getElementById('closeBtn');
+    
+    hamburger.addEventListener('click', () => {
+        mobileNav.classList.toggle('show');
+    });
+    
+    closeBtn.addEventListener('click', () => {
+        mobileNav.classList.remove('show');
+    });
 </script>
-
 </body>
 </html>
