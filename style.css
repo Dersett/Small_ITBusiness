@@ -1,8 +1,7 @@
 @media screen and (max-width: 480px), 
        screen and (min-width: 481px) and (max-width: 768px) {
   body {
-    overflow: auto;
-    scrollbar-width: none; /* Firefox */
+   scrollbar-width: none; /* Firefox */
   }
 
   /* Webkit browsers like Chrome, Safari */
