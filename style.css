@@ -2290,6 +2290,7 @@ header ul li a.active {
     width: 100%;
     background: #000;
     z-index: 999;
+    padding-bottom: 20px;
 }
 
 .mobile-nav a {
